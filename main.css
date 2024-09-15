@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 .landing {
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(./images/background2.jpg);
     background-size: cover;
@@ -23,12 +27,8 @@
     border-color: white;
 }
 
-h1{
-    font-size: 100px;
-}
-
 .perks{
-    width: 40%;
+    width: 50%;
 }
 
 .trisection{
@@ -41,4 +41,30 @@ h1{
 
 i{
     padding: 0px 8px;
+}
+
+@media (max-width:1200px){
+    
+    .purpleButton{
+        background-color: magenta;
+        border-color: magenta;
+        font-size: 20px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        text-align: center;
+    }
+    
+    .perks{
+        width: 70%;
+    }
+}
+
+@media (max-width:600px){
+    .landing{
+        gap: 30px;
+    }
+    
+    .perks{
+        width: 100%;
+    }
 }
